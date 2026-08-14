@@ -123,7 +123,6 @@ class RentalAgency {
     }
 }
 
-m
 public class day2hw1 {
     public static void main(String[] args) {
         RentalAgency agency = new RentalAgency();

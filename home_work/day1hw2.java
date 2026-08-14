@@ -36,18 +36,19 @@ class BankAccount {
         if (amount > 0 && amount <= balance) {
             this.balance -= amount;
             targetAccount.balance += amount;
-            System.out.println("₹" + amount + " transferred from Account " 
-                               + this.accountNumber + " to Account " + targetAccount.accountNumber);
-        } else if (amount > balance) {
+            System.out.println("₹" + amount + " transferred from Account "+ this.accountNumber + " to Account " + targetAccount.accountNumber); 
+                               
+        } 
+        else if (amount > balance) {
             System.out.println("Transfer failed! Insufficient balance in Account " + accountNumber);
-        } else {
+        } 
+        else {
             System.out.println("Invalid transfer amount!");
         }
     }
 
     public void displayDetails() {
-        System.out.println("Acc No: " + accountNumber + " | Name: " + customerName 
-                           + " | Type: " + accountType + " | Balance: ₹" + balance);
+        System.out.println("Acc No: " + accountNumber + " | Name: " + customerName + " | Type: " + accountType + " | Balance: ₹" + balance);                    
     }
 }
 
